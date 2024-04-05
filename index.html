@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>itch.io Games</title>
+<title>My Games</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -58,23 +58,81 @@
   .game a:hover {
     background-color: #00796b; /* Darker teal color on hover */
   }
+  .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+    .game img {
+        width: 25%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid #eee;
+    }
+    .header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+    }
+    .header img {
+        border-radius: 50%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
 </style>
 </head>
 <body>
+<div class="header">
+    <img src="images/me.jpg" alt="Your Picture">
+    <h1>Colby Sullivan</h1>
+    <p>Detailed oriented and future computer science graduate (May 2024) with
+proven history testing systems to improve software, computer, and information
+research for Southwestern University.</p> <p>Seeking a role to apply exceptional ability to
+switch between programming languages and frameworks as needed, while working
+quickly and independently.</p>
+</div>
 <div class="container">
   <div class="game">
     <img src="images\fallen.png" alt="Game Image">
     <h2>Fallen</h2>
     <p>You are Ouro, a warrior of the Tree of Life, sent to defeat the corruption that spreads from the Forest of Doom!</p><br>
     <a href="https://irishtrolls.itch.io/fallen">Play Game</a>
+    <a href="https://github.com/your-username/game1-repo" class="btn" target="_blank">GitHub Repo</a>
+  </div>
+  <div class="game">
+    <img src="images\trashman2.gif" alt="Game Image">
+    <h2>The Trash Man 2: Electric boogaloo</h2>
+    <p>Unfinished sequel to Trash Man but with a procedural background</p><br>
+    <a href="https://github.com/colbySullivan/Trash-Man-2-Electric-Boogaloo" class="btn" target="_blank">GitHub Repo</a>
   </div>
   <div class="game">
     <img src="images\danny.png" alt="Game Image">
     <h2>The Trash Man</h2>
     <p>Fling trash around and do things.</p><br>
     <a href="https://irishtrolls.itch.io/trash-man">Play Game</a>
+    <a href="https://github.com/colbySullivan/The-Trash-Man" class="btn" target="_blank">GitHub Repo</a>
   </div>
-  <!-- Add more game divs as needed -->
+  <div class="game">
+    <img src="images\starship.gif" alt="Game Image">
+    <h2>Starship</h2>
+    <p>Galaga clone using open-source API wrapper raylib </p><br>
+    <a href="https://github.com/colbySullivan/Starship" class="btn" target="_blank">GitHub Repo</a>
+  </div>
+  <div class="game">
+    <img src="images\dannyPong.gif" alt="Game Image">
+    <h2>Starship</h2>
+    <p>Very simple pong game</p><br>
+    <a href="https://github.com/colbySullivan/Danny-Devito-Pong" class="btn" target="_blank">GitHub Repo</a>
+  </div>
 </div>
 </body>
 </html>
