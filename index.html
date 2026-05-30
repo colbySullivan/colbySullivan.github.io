@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Games</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    color: #333;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colby Sullivan - Game Developer Portfolio">
+    <title>Colby Sullivan | Game Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- PLACEHOLDER: Add favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">CS_DEV</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="individual-work.html">Individual Work</a></li>
+                    <li><a href="teamwork.html">Team Work</a></li>
+                    <li><a href="personal.html">Resume</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <main>
         <section class="hero">
@@ -26,10 +46,8 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <!-- PLACEHOLDER: Replace with actual hero image -->
-                    <div class="placeholder-img">
-                        <span>HERO IMAGE</span>
-                    </div>
+                    <!-- Your picture -->
+                    <img src="images/winningme.png" alt="Colby Sullivan" style="width: 100%; border-radius: 8px; border: var(--border-chunky) solid var(--color-primary-cream);">
                 </div>
             </div>
         </section>
@@ -42,18 +60,46 @@
                 </div>
                 <div class="about-content">
                     <div class="about-text">
-                        <!-- PLACEHOLDER: Update bio text -->
                         <p>
-                            I'm Colby Sullivan, a passionate game developer dedicated to creating 
-                            immersive and engaging gaming experiences. With expertise in game design, 
-                            programming, and project collaboration, I bring creative visions to life 
+                            I'm Colby Sullivan, a passionate game developer dedicated to creating
+                            immersive and engaging gaming experiences. With expertise in game design,
+                            programming, and project collaboration, I bring creative visions to life
                             through code and artistry.
                         </p>
                         <p>
-                            My journey in game development combines technical skills with creative 
-                            problem-solving, allowing me to tackle challenges from concept to completion. 
-                            I thrive in both independent and team-based projects, always pushing to 
+                            My journey in game development combines technical skills with creative
+                            problem-solving, allowing me to tackle challenges from concept to completion.
+                            I thrive in both independent and team-based projects, always pushing to
                             create memorable player experiences.
+                        </p>
+
+                        <h3>What I Love</h3>
+
+                        <h4>Favorite Games</h4>
+                        <p>
+                            <strong>League of Legends</strong>, <strong>The Last of Us</strong>, and
+                            <strong>Call of Duty: Black Ops 2</strong> - These games inspire my approach
+                            to game design and development.
+                        </p>
+
+                        <h4>Favorite Books</h4>
+                        <p>
+                            <strong>The Kingkiller Chronicle</strong>, <strong>Arc of a Scythe</strong>, and
+                            <strong>Mistborn</strong> - Great storytelling fuels my passion for creating
+                            compelling narratives in games.
+                        </p>
+
+                        <h4>Favorite Board Games</h4>
+                        <p>
+                            <strong>War of the Ring</strong>, <strong>Nemesis</strong>, and
+                            <strong>Dune: Imperium</strong> - Strategic gameplay and immersive themes
+                            that inspire my game development philosophy.
+                        </p>
+
+                        <h4>Hobbies</h4>
+                        <p>
+                            <strong>Mountain Biking</strong>, <strong>Walking my dog</strong>,
+                            <strong>Surfing</strong>, and <strong>Snowboarding</strong>
                         </p>
                     </div>
                 </div>
@@ -87,144 +133,41 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
 
-  .game h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #009688; /* Teal color */
-  }
+        <section class="social-links">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Connect</h2>
+                    <div class="pixel-divider"></div>
+                </div>
+                <div class="social-buttons">
+                    <!-- PLACEHOLDER: Update with actual LinkedIn URL -->
+                    <a href="https://linkedin.com/in/colbywsullivan" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <!-- PLACEHOLDER: Update with actual GitHub URL -->
+                    <a href="https://github.com/colbySullivan" target="_blank" rel="noopener noreferrer" class="social-btn github">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  .game p {
-    margin: 0;
-    color: #666;
-  }
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Colby Sullivan. All rights reserved.</p>
+            <p class="footer-tagline">Level up your game development</p>
+        </div>
+    </footer>
 
-  .game a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #009688; /* Teal color */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-
-  .game a:hover {
-    background-color: #00796b; /* Darker teal color on hover */
-  }
-  .btn {
-        display: inline-block;
-        padding: 8px 16px;
-        background-color: #4CAF50;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-    .btn:hover {
-        background-color: #45a049;
-    }
-    .game img {
-        width: 25%;
-        height: 200px;
-        object-fit: cover;
-        border-bottom: 2px solid #eee;
-    }
-    .header {
-        text-align: center;
-        padding: 20px 0;
-        background-color: #333;
-        color: #fff;
-    }
-    .header img {
-        border-radius: 50%;
-        max-width: 200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-</style>
-</head>
-<body>
-<div class="header">
-    <img src="images/me.jpg" alt="Your Picture">
-    <h1>Colby Sullivan</h1>
-    <p>I am a detailed oriented and computer science graduate with
-proven history testing systems to improve software, computer, and information
-research for Southwestern University.</p><p>I am passionate about programming and game design, and I am seeking a role where I can apply my ability to switch between programming languages and frameworks as needed while working.</p>
-<button class="btn" onclick="window.location.href = 'https://github.com/colbySullivan';">My GitHub</button>
-<a href="Resume.docx" download="Resume.docx">
-    <button class="btn">Download resume</button>
-</a>
-<button class="btn" onclick="window.location.href = 'https://colbywsully7.wixsite.com/mysite';">Work in progress site</button>
-</div>
-<div class="container">
-  <div class="game">
-    <img src="images\fallen.png" alt="Game Image">
-    <h2>Fallen</h2>
-    <p>Godot Platformer created for the 2024 Chillenium Game Jam. </p>
-    <p>A team of 3 people and I were given 48 hours to complete this game in which I was the programmer and game designer.</p><br>
-    <a href="https://irishtrolls.itch.io/fallen">Play Game</a>
-    <a href="https://github.com/colbySullivan/Fallen" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\cssImage.png" alt="Game Image">
-    <h2>Course Scheduling Service (CSS)</h2>
-    <p>Developed a user-friendly web-based application using JavaScript, Git, Firebase, and HTML to optimize course schedules 
-    <p>for department chairs at Southwestern University. </p>
-    <p>Integrated a Python script leveraging the GLPK library for linear programming techniques which effectively manages scheduling conflicts.</p>
-    <p>Received positive feedback from department chairs for the application's ease of use and efficiency in scheduling.</p><br>
-    <a href="http://colbysullivan.pythonanywhere.com/">Website</a>
-    <a href="https://github.com/MuellMark/Course-Scheduler" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\map_testing.gif" alt="Game Image">
-    <img src="images\engine_map.gif" alt="Game Image">
-    <h2>Procedural-Map-Testing</h2>
-    <p>This repository contains a project for testing and implementing procedural map generation using the walking algorithm in the Godot Engine.</p>
-    <p>The walking algorithm is used to create random, yet cohesive, maps by simulating random movement on a grid, producing organic and unpredictable</p>
-    <p>terrain features. This project serves as a starting point for exploring procedural generation techniques in game development, with an emphasis</p>
-    <p>on ease of customization and flexibility in Godot.</p><br>
-    <a href="https://github.com/colbySullivan/Procedural-Map-Testing" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\trashman2.gif" alt="Game Image">
-    <h2>The Trash Man 2: Electric boogaloo</h2>
-    <p>This is the second installment to the Trash Man series and it is still being made in Godot. Instead of being a platformer </p>
-    <p>it is now a top down adventure game. This game utilizes an script that I wrote that procedurally generates a tile map </p>
-    <p>background that uses Godot's NoiseTexture2D.</p><br>
-    <a href="https://github.com/colbySullivan/Trash-Man-2-Electric-Boogaloo" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\danny.png" alt="Game Image">
-    <h2>The Trash Man</h2>
-    <p>This was my first game made using Godot. It is written using primarily C# but I did use GDscript for some the enemy interactions. </p>
-    <p>This game also utilizes a simple state machine for the enemy NPCs but it only includes 3 states.</p><br>
-    <a href="https://irishtrolls.itch.io/trash-man">Play Game</a>
-    <a href="https://github.com/colbySullivan/The-Trash-Man" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\starship.gif" alt="Game Image">
-    <h2>Starship</h2>
-    <p>This was my second game that I made using the SFML API wrapper. In this project I set out to plan my features and try my hand at more </p>
-    <p>advanced linear algebra. I worked on this during my lunch breaks during my internship with Solis and I am very happy with how it turned out.</p><br>
-    <a href="https://github.com/colbySullivan/Starship" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\dannyPong.gif" alt="Game Image">
-    <h2>Danny Pong</h2>
-    <p>This game is written entirely in C++ using the open-source API wrapper SMFL. I learned a lot about advance class inheritance and good git practices. </p>
-    <p>This game also features my own simple AI for the CPU controller that scales as a match continues.</p><br>
-    <a href="https://github.com/colbySullivan/Danny-Devito-Pong" class="btn" target="_blank">GitHub Repo</a>
-  </div>
-  <div class="game">
-    <img src="images\comingSoon.jpg" alt="Game Image">
-    <h2>The Trash Man 3: Return of the boogaloo</h2>
-    <p>The third installment of the Trash Man series. The game is still a work in progress but it essentially a 3D survival </p>
-    <p>game that is being created using Unity. The enemy entities are animated in 2D but I have written a script that rotates </p>
-    <p>them so that they are always facing the player. I plan to have a working prototype in up on this page by the end of May.</p><br>
-    <a href="" class="btn" target="_blank">GitHub Repo still a work in progress</a>
-  </div>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
