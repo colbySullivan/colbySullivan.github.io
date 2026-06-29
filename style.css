@@ -12,7 +12,7 @@
     /* Background Colors - Solid only */
     --color-bg-dark: #1b4332;
     --color-bg-medium: #2d6a4f;
-    --color-bg-light: #40916c;
+    --color-bg-light: #357a5c;
     --color-panel: #52b788;
     /* Accent Shades */
     --color-green-dark: #2d6a4f;
@@ -109,7 +109,7 @@ h2 {
 
 h3 {
     font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--color-primary-green);
+    color: var(--color-text-secondary);
 }
 
 p {
@@ -151,8 +151,8 @@ a {
 
     .site-header .container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: var(--spacing-sm);
     }
 
 .logo-text {
@@ -298,7 +298,7 @@ a {
 
 .hero-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--color-primary-green);
+    color: var(--color-green-light);
     text-transform: uppercase;
     margin-bottom: var(--spacing-xs);
 }
@@ -513,6 +513,9 @@ section {
     position: relative;
     border-radius: 12px;
     box-shadow: var(--shadow-subtle);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
     .card:hover {
@@ -529,11 +532,17 @@ section {
 
 .card h3 {
     margin-bottom: var(--spacing-sm);
+    min-height: 3.2em; /* reserve 2 lines so all card descriptions align */
 }
 
 .card p {
     margin-bottom: var(--spacing-md);
     min-height: 60px;
+    width: 100%;
+}
+
+.card .btn {
+    margin-top: auto;
 }
 
 /* ============================================
@@ -564,13 +573,13 @@ section {
 }
 
     .social-btn.linkedin {
-        border-color: var(--color-primary-green);
-        color: var(--color-primary-green);
+        border-color: var(--color-primary-cream);
+        color: var(--color-primary-cream);
     }
 
         .social-btn.linkedin:hover {
-            background-color: var(--color-primary-green);
-            color: var(--color-primary-cream);
+            background-color: var(--color-primary-cream);
+            color: var(--color-text-on-cream);
             transform: translateY(-2px);
             box-shadow: var(--shadow-subtle);
         }
@@ -933,3 +942,97 @@ section {
         justify-content: center;
     }
 }
+
+/* ============================================
+   ACCESSIBILITY: COLORBLIND THEME TOGGLE
+   ============================================ */
+.logo {
+    margin-right: auto;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    border: var(--border-thin) solid var(--color-primary-cream);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-family: var(--font-display);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+    .theme-toggle:hover,
+    .theme-toggle:focus-visible {
+        background-color: var(--color-primary-cream);
+        color: var(--color-text-on-cream);
+    }
+
+    .theme-toggle[aria-pressed="true"] {
+        background-color: var(--color-primary-green);
+        border-color: var(--color-primary-green);
+        color: var(--color-text-on-cream);
+    }
+
+    .theme-toggle svg {
+        flex-shrink: 0;
+    }
+
+@media (max-width: 600px) {
+    .theme-toggle-label {
+        display: none;
+    }
+}
+
+/* ============================================
+   COLORBLIND-FRIENDLY PALETTE
+   High-contrast neutral slate with a color-vision-safe blue accent
+   (Okabe-Ito) and white text, replacing the green-on-green scheme.
+   ============================================ */
+html.cb-friendly {
+    --color-primary-green: #56b4e9;
+    --color-primary-cream: #ffffff;
+    --color-bg-dark: #11161f;
+    --color-bg-medium: #1c2530;
+    --color-bg-light: #2b3744;
+    --color-panel: #56b4e9;
+    --color-green-dark: #0072b2;
+    --color-green-light: #8fd3f4;
+    --color-cream-dark: #e6e6e6;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #eaf0f6;
+    --color-text-muted: #b9c4d0;
+    --color-text-on-cream: #11161f;
+}
+
+/* ============================================
+   PROJECT TECH / TOOLS TAGS
+   ============================================ */
+.tech-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+    padding: 0;
+}
+
+    .tech-tags li {
+        font-family: var(--font-display);
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-secondary);
+        background-color: var(--color-bg-dark);
+        border: var(--border-thin) solid var(--color-primary-green);
+        padding: 0.25rem 0.65rem;
+        border-radius: 999px;
+    }

@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Individual Work - Colby Sullivan Game Developer">
     <title>Individual Work | Colby Sullivan</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Individual Work | Colby Sullivan">
+    <meta property="og:description" content="Solo game development projects, including procedural dungeon generation built in Godot.">
+    <meta property="og:image" content="https://www.colbysullivan.com/images/winningme.png">
+    <meta property="og:url" content="https://www.colbysullivan.com/individual-work.html">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script>try{if(localStorage.getItem('cbTheme')==='on'){document.documentElement.classList.add('cb-friendly');}}catch(e){}</script>
 </head>
 <body>
     <div class="scanlines"></div>
-    
+
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -24,6 +31,13 @@
                     <li><a href="personal.html">Resume</a></li>
                 </ul>
             </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle colorblind-friendly colors" title="Colorblind-friendly colors">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"></path>
+                </svg>
+                <span class="theme-toggle-label">Colorblind</span>
+            </button>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -52,42 +66,48 @@
                     <div class="project-overview">
                         <div class="overview-panel">
                             <h3>Project Overview</h3>
-                            <!-- PLACEHOLDER: Update project overview -->
+                            <!-- PLACEHOLDER COPY: replace with your real DFS I details -->
                             <p>
-                                DFS I 
+                                DFS I was my first end-to-end solo game project. Working entirely on my
+                                own, I took the game from an initial concept through prototyping,
+                                programming, and polish to a complete, playable build &mdash; owning every
+                                part of the process along the way.
                             </p>
+                            <ul class="tech-tags">
+                                <li>C++</li>
+                                <li>Custom Engine</li>
+                                <li>Perforce</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="project-media">
                         <div class="media-item">
                             <div class="media-frame">
-                                <!-- PLACEHOLDER: Replace with actual static image -->
-                                <div class="placeholder-img">
-                                    <span>STATIC SCREENSHOT</span>
-                                </div>
+                                <!-- PLACEHOLDER IMAGE: swap with a real DFS I screenshot -->
+                                <img src="images/starship.gif" alt="DFS I main gameplay screen" style="width: 100%; border-radius: 8px;">
                             </div>
                             <div class="media-description">
                                 <h4>Main Gameplay Screen</h4>
-                                <!-- PLACEHOLDER: Update image description -->
+                                <!-- PLACEHOLDER COPY -->
                                 <p>
-
+                                    The core gameplay view, showing the main mechanics and the on-screen
+                                    elements players interact with during a session.
                                 </p>
                             </div>
                         </div>
 
                         <div class="media-item">
                             <div class="media-frame">
-                                <!-- PLACEHOLDER: Replace with actual animated GIF -->
-                                <div class="placeholder-img animated">
-                                    <span>ANIMATED GIF</span>
-                                </div>
+                                <!-- PLACEHOLDER IMAGE: swap with a real DFS I gameplay clip -->
+                                <img src="images/trashman2.gif" alt="DFS I gameplay in action" style="width: 100%; border-radius: 8px;">
                             </div>
                             <div class="media-description">
                                 <h4>Gameplay in Action</h4>
-                                <!-- PLACEHOLDER: Update animation description -->
+                                <!-- PLACEHOLDER COPY -->
                                 <p>
-
+                                    A short capture of the game in motion, showing the core loop and how
+                                    the systems come together in real time.
                                 </p>
                             </div>
                         </div>
@@ -96,25 +116,34 @@
                     <div class="project-details">
                         <div class="detail-panel">
                             <h3>Development Purpose</h3>
-                            <!-- PLACEHOLDER: Update purpose section -->
+                            <!-- PLACEHOLDER COPY -->
                             <p>
-
+                                The goal was to build a complete, self-contained game by myself and
+                                strengthen my core development fundamentals. Owning the whole project
+                                pushed me to scope realistically, make design decisions, and solve
+                                problems without a team to fall back on.
                             </p>
                         </div>
 
                         <div class="detail-panel">
                             <h3>Development Process</h3>
-                            <!-- PLACEHOLDER: Update process section -->
+                            <!-- PLACEHOLDER COPY -->
                             <p>
-
+                                I began with a minimal prototype to prove out the core mechanic, then
+                                iterated on gameplay, level design, and feel through repeated playtesting.
+                                Each pass refined the systems, fixed bugs, and tightened the
+                                moment-to-moment experience until it felt cohesive.
                             </p>
                         </div>
 
                         <div class="detail-panel">
-                            <h3>Outcome & Achievements</h3>
-                            <!-- PLACEHOLDER: Update outcome section -->
+                            <h3>Outcome &amp; Achievements</h3>
+                            <!-- PLACEHOLDER COPY -->
                             <p>
-
+                                The result is a complete, playable game that demonstrates my ability to
+                                carry a project from concept to finished build on my own. It set the
+                                development habits and problem-solving approach I carried into my later
+                                solo and team projects.
                             </p>
                         </div>
                     </div>
@@ -132,11 +161,15 @@
                             <h3>Project Overview</h3>
                             <!-- PLACEHOLDER: Update project overview -->
                             <p>
-                                This solo project explores procedural dungeon generation techniques implemented 
-                                in Godot Engine. I developed algorithms to create dynamic, randomized dungeon 
-                                layouts that ensure playability and variety with each generation, demonstrating 
+                                This solo project explores procedural dungeon generation techniques implemented
+                                in Godot Engine. I developed algorithms to create dynamic, randomized dungeon
+                                layouts that ensure playability and variety with each generation, demonstrating
                                 advanced programming skills and algorithmic thinking.
                             </p>
+                            <ul class="tech-tags">
+                                <li>Godot</li>
+                                <li>GDScript</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -150,7 +183,7 @@
                                 <h4>Procedural Generation in Action</h4>
                                 <!-- PLACEHOLDER: Update image description -->
                                 <p>
-                                    Real-time demonstration of the procedural dungeon generation algorithm 
+                                    Real-time demonstration of the procedural dungeon generation algorithm
                                     creating interconnected rooms and corridors with validated pathfinding.
                                 </p>
                             </div>
@@ -162,9 +195,9 @@
                             <h3>Development Purpose</h3>
                             <!-- PLACEHOLDER: Update purpose section -->
                             <p>
-                                The goal was to create a robust procedural generation system that could 
-                                produce varied, playable dungeon layouts for roguelike or dungeon-crawler 
-                                games. This project allowed me to dive deep into algorithm design, 
+                                The goal was to create a robust procedural generation system that could
+                                produce varied, playable dungeon layouts for roguelike or dungeon-crawler
+                                games. This project allowed me to dive deep into algorithm design,
                                 spatial reasoning, and optimization techniques within the Godot Engine.
                             </p>
                         </div>
@@ -173,22 +206,22 @@
                             <h3>Development Process</h3>
                             <!-- PLACEHOLDER: Update process section -->
                             <p>
-                                Development involved implementing room placement algorithms, corridor generation, 
-                                and pathfinding validation to ensure all areas remain accessible. I worked with 
-                                Godot's tilemap systems and optimized the generation process for performance. 
-                                Iterative testing helped refine the balance between procedural complexity 
+                                Development involved implementing room placement algorithms, corridor generation,
+                                and pathfinding validation to ensure all areas remain accessible. I worked with
+                                Godot's tilemap systems and optimized the generation process for performance.
+                                Iterative testing helped refine the balance between procedural complexity
                                 and gameplay requirements.
                             </p>
                         </div>
 
                         <div class="detail-panel">
-                            <h3>Outcome & Achievements</h3>
+                            <h3>Outcome &amp; Achievements</h3>
                             <!-- PLACEHOLDER: Update outcome section -->
                             <p>
-                                The system successfully generates fully-connected, playable dungeons with 
-                                customizable parameters for room size, corridor complexity, and layout density. 
-                                This project demonstrates technical proficiency in procedural generation, 
-                                algorithm implementation, and understanding of game design principles for 
+                                The system successfully generates fully-connected, playable dungeons with
+                                customizable parameters for room size, corridor complexity, and layout density.
+                                This project demonstrates technical proficiency in procedural generation,
+                                algorithm implementation, and understanding of game design principles for
                                 replayable content.
                             </p>
                         </div>

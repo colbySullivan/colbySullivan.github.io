@@ -180,3 +180,47 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// ============================================
+// Colorblind-Friendly Theme Toggle
+// ============================================
+(function () {
+    const STORAGE_KEY = 'cbTheme';
+    const root = document.documentElement;
+
+    function syncButtons(on) {
+        document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            const label = btn.querySelector('.theme-toggle-label');
+            if (label) {
+                label.textContent = on ? 'Default' : 'Colorblind';
+            }
+        });
+    }
+
+    function setTheme(on) {
+        root.classList.toggle('cb-friendly', on);
+        syncButtons(on);
+        try {
+            localStorage.setItem(STORAGE_KEY, on ? 'on' : 'off');
+        } catch (e) { /* localStorage unavailable */ }
+    }
+
+    function init() {
+        // The inline <head> script may have already applied the class on load;
+        // sync the button state to whatever is currently active.
+        syncButtons(root.classList.contains('cb-friendly'));
+
+        document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                setTheme(!root.classList.contains('cb-friendly'));
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
